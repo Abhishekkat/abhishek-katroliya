@@ -3,19 +3,28 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 
 const Education = () => {
   const education = [
-    {
-      degree: "Bachelor of Technology",
+     {
+      degree: "Master of Computer Application",
       field: "Computer Science",
-      institution: "Rajasthan Technical University",
-      period: "2014 - 2018",
+      institution: "APJ Abdul Kalam Technical University",
+      period: "2019 - 2021",
       description: "Focused on computer science fundamentals, data structures, and algorithms",
       icon: <GraduationCap className="h-6 w-6 text-blue-400" />
     },
     {
+      degree: "Bachelor of Computer Application",
+      field: "Computer Science",
+      institution: "Bundelkhand University",
+      period: "2016 - 2019",
+      description: "Focused on computer science fundamentals, data structures, and algorithms",
+      icon: <GraduationCap className="h-6 w-6 text-blue-400" />
+    },
+   
+    {
       degree: "Data Engineering Certification",
       field: "AWS & Big Data",
-      institution: "Online Certification",
-      period: "2023",
+      institution: "Data Vidhya",
+      period: "In Progress",
       description: "Specialized training in AWS services, ETL processes, and data pipeline development",
       icon: <BookOpen className="h-6 w-6 text-blue-400" />
     }
