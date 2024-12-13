@@ -16,8 +16,7 @@ const Experience = () => {
       company: "Epitome Cloud Inc.",
       period: "2021/12 - 2024/7",
       location: "Hyderabad,india",
-      description: "•
- Configure CLM software platforms, including system setup, user permissions, data migration, and integration with other business systems (e.g., CRM, ERP).",
+      description: "Configure CLM software platforms, including system setup, user permissions, data migration, and integration with other business systems (e.g., CRM, ERP).",
       icon: <GraduationCap className="h-6 w-6 text-blue-400" />
     },
     {
