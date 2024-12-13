@@ -3,9 +3,9 @@ import { Globe } from "lucide-react";
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A beautiful web application built with React and Node.js",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    title: "AWS ETL Pipeline",
+    description: "Built a sophisticated ETL pipeline using AWS services to process Spotify API data, featuring Lambda functions, S3 storage, and Athena for analytics",
+    image: "/lovable-uploads/3b8b814b-1459-4289-9ea6-431e212be3e9.png",
     link: "#",
   },
   {
@@ -37,7 +37,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-contain bg-white p-4"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
