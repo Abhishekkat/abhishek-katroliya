@@ -5,23 +5,23 @@ const Experience = () => {
   const experiences = [
     {
       title: "CLM Consultant",
-      company: "Contract Lifecycle Management",
-      period: "2021 - 2024",
+      company: "Sequent Inc.",
+      period: "2024 - Present",
       description: "Implemented solutions, streamlined processes, and managed complex projects in contract lifecycle management.",
       icon: <Briefcase className="h-6 w-6 text-blue-400" />
     },
     {
-      title: "Data Engineering Transition",
-      company: "Self-Directed Learning",
+      title: "Consultant",
+      company: "Epitome Cloud Inc.",
       period: "2023 - Present",
       description: "Actively pursuing data engineering skills through courses, projects, and hands-on learning.",
       icon: <GraduationCap className="h-6 w-6 text-blue-400" />
     },
     {
-      title: "Previous Experience",
-      company: "Various Organizations",
+      title: "Full Stack Developer",
+      company: "TECH I.S",
       period: "2018 - 2021",
-      description: "Built foundational skills in project management and business analysis.",
+      description: "Built foundational skills in Front End and Backend.",
       icon: <Building2 className="h-6 w-6 text-blue-400" />
     }
   ];
