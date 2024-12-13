@@ -6,10 +6,10 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center bg-navy text-white p-4">
       <div className="max-w-4xl mx-auto text-center animate-fadeIn">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Hi, I'm <span className="text-blue-400">Your Name</span>
+          Hi, I'm <span className="text-blue-400">Abhishek Katroliya</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-300">
-          Full Stack Developer & Designer
+          Data Engineer
         </p>
         <div className="flex gap-4 justify-center">
           <Button className="bg-blue-500 hover:bg-blue-600">
