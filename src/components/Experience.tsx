@@ -6,14 +6,16 @@ const Experience = () => {
     {
       title: "CLM Consultant",
       company: "Sequent Inc.",
-      period: "2024 - Present",
+      period: "2024/7 - Present",
+      location: "Gurugram,india",
       description: "Implemented solutions, streamlined processes, and managed complex projects in contract lifecycle management.",
       icon: <Briefcase className="h-6 w-6 text-blue-400" />
     },
     {
       title: "Consultant",
       company: "Epitome Cloud Inc.",
-      period: "2023 - Present",
+      period: "2021/12 - 2024/7",
+      location: "Hyderabad,india",
       description: "Actively pursuing data engineering skills through courses, projects, and hands-on learning.",
       icon: <GraduationCap className="h-6 w-6 text-blue-400" />
     },
@@ -21,6 +23,7 @@ const Experience = () => {
       title: "Full Stack Developer",
       company: "TECH I.S",
       period: "2018 - 2021",
+      location: "Bengaluru,india",
       description: "Built foundational skills in Front End and Backend.",
       icon: <Building2 className="h-6 w-6 text-blue-400" />
     }
