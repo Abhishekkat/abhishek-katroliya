@@ -8,13 +8,14 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fadeIn">
             <p className="text-lg text-gray-300">
-              I'm a passionate developer with a keen eye for design and a love for creating
-              beautiful, functional web applications. With years of experience in both frontend
-              and backend development, I bring ideas to life through code.
+             With three years of experience as a Contract Lifecycle Management (CLM) consultant, I have honed my skills in implementing solutions, streamlining processes, and managing complex projects.
+              My passion for problem-solving and working with data has inspired me to transition into the field of data engineering.
+            I am eager to leverage my analytical mindset and technical expertise to design and build robust data pipelines, optimize workflows, and unlock insights from data.
+              As I embark on this new career path, I bring a unique perspective from my CLM background, combining business acumen with a strong drive to deliver impactful data solutions.
             </p>
             <div className="flex items-center gap-4">
               <Award className="h-6 w-6 text-blue-400" />
-              <span>5+ Years of Experience</span>
+              <span>3 Years of Experience</span>
             </div>
             <div className="flex items-center gap-4">
               <BookOpen className="h-6 w-6 text-blue-400" />
