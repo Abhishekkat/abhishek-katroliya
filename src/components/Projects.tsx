@@ -6,7 +6,7 @@ const projects = [
     title: "AWS ETL Pipeline",
     description: "Built a sophisticated ETL pipeline using AWS services to process Spotify API data, featuring Lambda functions, S3 storage, and Athena for analytics",
     image: "/lovable-uploads/3b8b814b-1459-4289-9ea6-431e212be3e9.png",
-    link: "#",
+    link: "https://github.com/Abhishekkat/Spotify_ETL_Pipline",
   },
   {
     title: "Project 2",
