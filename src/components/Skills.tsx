@@ -2,18 +2,18 @@ import { Laptop, Globe, Camera } from "lucide-react";
 
 const skills = [
   {
-    category: "Frontend",
-    items: ["React", "TypeScript", "Tailwind CSS"],
+    category: "Programming",
+    items: ["JavaScript", "Python", "HTML/CSS"],
     icon: <Laptop className="h-6 w-6" />,
   },
   {
-    category: "Backend",
-    items: ["Node.js", "Python", "PostgreSQL"],
+    category: "Database",
+    items: ["SQL", "Snowflake"],
     icon: <Globe className="h-6 w-6" />,
   },
   {
-    category: "Design",
-    items: ["Figma", "Adobe XD", "UI/UX"],
+    category: "AWS Cloud Services",
+    items: ["S3", "Glue", "Athena"],
     icon: <Camera className="h-6 w-6" />,
   },
 ];
