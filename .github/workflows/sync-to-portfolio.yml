@@ -19,7 +19,8 @@ jobs:
           git config --global user.email "chotuabhi97@gmail.com"
 
       - name: Add Portfolio Repository as Remote
-        run: git remote add portfolio https://Abhishekkat:${{ secrets.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_ABHISHEK_PORTFOLIO }}@github.com/Abhishekkat/Abhishek-Portfolio.git
+        run: git remote add portfolio https://Abhishekkat:${{ secrets.ABHISHEK_PORTFOLIO_TOKEN }}@github.com/Abhishekkat/Abhishek-Portfolio.git
+
 
       - name: Push Changes to Portfolio Repository
         run: |
