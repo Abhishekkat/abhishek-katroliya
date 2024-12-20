@@ -5,10 +5,12 @@ import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import Navigation from "@/components/Navigation";
 
 const Index = () => {
   return (
     <main className="bg-navy">
+      <Navigation />
       <Hero />
       <About />
       <Experience />
