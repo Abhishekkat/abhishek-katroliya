@@ -2,6 +2,11 @@ import { User, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about');
+    aboutSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center bg-navy text-white p-4">
       <div className="max-w-4xl mx-auto text-center animate-fadeIn">
@@ -12,7 +17,10 @@ const Hero = () => {
           Data Engineer
         </p>
         <div className="flex gap-4 justify-center">
-          <Button className="bg-blue-500 hover:bg-blue-600">
+          <Button 
+            className="bg-blue-500 hover:bg-blue-600"
+            onClick={scrollToAbout}
+          >
             <User className="mr-2 h-4 w-4" /> About Me
           </Button>
           <Button variant="outline">
