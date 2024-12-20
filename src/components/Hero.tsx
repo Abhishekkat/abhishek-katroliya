@@ -7,6 +7,11 @@ const Hero = () => {
     aboutSection?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    contactSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center bg-navy text-white p-4">
       <div className="max-w-4xl mx-auto text-center animate-fadeIn">
@@ -23,7 +28,10 @@ const Hero = () => {
           >
             <User className="mr-2 h-4 w-4" /> About Me
           </Button>
-          <Button variant="outline">
+          <Button 
+            variant="outline"
+            onClick={scrollToContact}
+          >
             <Mail className="mr-2 h-4 w-4" /> Contact
           </Button>
         </div>
