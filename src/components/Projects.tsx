@@ -42,7 +42,10 @@ const Projects = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-gray-300 mb-4">{project.description}</p>
-                <Button className="w-full bg-blue-500 hover:bg-blue-600">
+                <Button 
+                  className="w-full bg-blue-500 hover:bg-blue-600"
+                  onClick={() => window.open(project.link, '_blank')}
+                >
                   <Globe className="mr-2 h-4 w-4" /> View Project
                 </Button>
               </div>
