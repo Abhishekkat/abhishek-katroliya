@@ -1,0 +1,26 @@
+name: Sync to Abhishek-Portfolio
+
+on:
+  push:
+    branches:
+      - main # Adjust this to the branch you want to track
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Showcase Repository
+        uses: actions/checkout@v3
+
+      - name: Set Up Git
+        run: |
+          git config --global user.name "Abhishek Kat"
+          git config --global user.email "chotuabhi97@gmail.com"
+
+      - name: Add Portfolio Repository as Remote
+        run: git remote add portfolio https://Abhishekkat:${{ secrets.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_ABHISHEK_PORTFOLIO }}@github.com/Abhishekkat/Abhishek-Portfolio.git
+
+      - name: Push Changes to Portfolio Repository
+        run: |
+          git push portfolio main --force
