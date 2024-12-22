@@ -20,6 +20,11 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
+    if (!RESEND_API_KEY) {
+      console.error("RESEND_API_KEY is not set");
+      throw new Error("RESEND_API_KEY is not set");
+    }
+
     const { name, email, message }: EmailRequest = await req.json();
     
     console.log("Sending email with data:", { name, email, message });
@@ -46,11 +51,13 @@ const handler = async (req: Request): Promise<Response> => {
 
     if (!res.ok) {
       const error = await res.text();
-      console.error("Error sending email:", error);
+      console.error("Error response from Resend:", error);
       throw new Error(error);
     }
 
     const data = await res.json();
+    console.log("Email sent successfully:", data);
+
     return new Response(JSON.stringify(data), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
       status: 200,
@@ -58,7 +65,10 @@ const handler = async (req: Request): Promise<Response> => {
   } catch (error) {
     console.error("Error in send-email function:", error);
     return new Response(
-      JSON.stringify({ error: "Failed to send email" }),
+      JSON.stringify({ 
+        error: "Failed to send email", 
+        details: error.message 
+      }),
       {
         headers: { ...corsHeaders, "Content-Type": "application/json" },
         status: 500,
