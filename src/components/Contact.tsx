@@ -30,11 +30,16 @@ const Contact = () => {
     setIsLoading(true);
 
     try {
-      const { error } = await supabase.functions.invoke("send-email", {
+      const { data, error } = await supabase.functions.invoke("send-email", {
         body: formData,
       });
 
-      if (error) throw error;
+      console.log("Response from send-email function:", { data, error });
+
+      if (error) {
+        console.error("Error details:", error);
+        throw error;
+      }
 
       toast({
         title: "Message Sent!",
@@ -43,11 +48,11 @@ const Contact = () => {
 
       // Clear form
       setFormData({ name: "", email: "", message: "" });
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error sending message:", error);
       toast({
         title: "Error",
-        description: "Failed to send message. Please try again later.",
+        description: error.message || "Failed to send message. Please try again later.",
         variant: "destructive",
       });
     } finally {
