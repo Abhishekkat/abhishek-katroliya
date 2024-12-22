@@ -22,12 +22,11 @@ const handler = async (req: Request): Promise<Response> => {
   try {
     if (!RESEND_API_KEY) {
       console.error("RESEND_API_KEY is not set");
-      throw new Error("RESEND_API_KEY is not set");
+      throw new Error("Server configuration error");
     }
 
-    const { name, email, message }: EmailRequest = await req.json();
-    
-    console.log("Sending email with data:", { name, email, message });
+    const formData: EmailRequest = await req.json();
+    console.log("Received form data:", formData);
 
     const res = await fetch("https://api.resend.com/emails", {
       method: "POST",
@@ -38,25 +37,23 @@ const handler = async (req: Request): Promise<Response> => {
       body: JSON.stringify({
         from: "Portfolio Contact Form <onboarding@resend.dev>",
         to: ["your-email@example.com"], // Replace with your email
-        subject: `New Contact Form Submission from ${name}`,
+        subject: `New Contact Form Submission from ${formData.name}`,
         html: `
           <h2>New Contact Form Submission</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Name:</strong> ${formData.name}</p>
+          <p><strong>Email:</strong> ${formData.email}</p>
           <p><strong>Message:</strong></p>
-          <p>${message}</p>
+          <p>${formData.message}</p>
         `,
       }),
     });
 
-    if (!res.ok) {
-      const error = await res.text();
-      console.error("Error response from Resend:", error);
-      throw new Error(error);
-    }
-
     const data = await res.json();
-    console.log("Email sent successfully:", data);
+    console.log("Resend API response:", data);
+
+    if (!res.ok) {
+      throw new Error(data.message || "Failed to send email");
+    }
 
     return new Response(JSON.stringify(data), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
@@ -66,8 +63,7 @@ const handler = async (req: Request): Promise<Response> => {
     console.error("Error in send-email function:", error);
     return new Response(
       JSON.stringify({ 
-        error: "Failed to send email", 
-        details: error.message 
+        error: error instanceof Error ? error.message : "Failed to send email" 
       }),
       {
         headers: { ...corsHeaders, "Content-Type": "application/json" },
