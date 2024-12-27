@@ -29,7 +29,6 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <span className="text-white font-bold text-xl">Abhishek</span>
           
-          {/* Mobile menu button */}
           <button
             className="md:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -37,7 +36,6 @@ const Navigation = () => {
             <Menu className="h-6 w-6" />
           </button>
 
-          {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("about")}
@@ -56,6 +54,12 @@ const Navigation = () => {
               className="text-white hover:text-blue-400 transition-colors"
             >
               Education
+            </button>
+            <button
+              onClick={() => scrollToSection("certificates")}
+              className="text-white hover:text-blue-400 transition-colors"
+            >
+              Certificates
             </button>
             <button
               onClick={() => scrollToSection("skills")}
@@ -82,7 +86,6 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden bg-navy">
             <div className="px-2 pt-2 pb-3 space-y-1">
@@ -103,6 +106,12 @@ const Navigation = () => {
                 className="block w-full text-left px-3 py-2 text-white hover:text-blue-400 transition-colors"
               >
                 Education
+              </button>
+              <button
+                onClick={() => scrollToSection("certificates")}
+                className="block w-full text-left px-3 py-2 text-white hover:text-blue-400 transition-colors"
+              >
+                Certificates
               </button>
               <button
                 onClick={() => scrollToSection("skills")}
