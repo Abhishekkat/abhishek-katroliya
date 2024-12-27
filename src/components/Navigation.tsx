@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu } from "lucide-react";
+import { Menu, Github, Linkedin } from "lucide-react";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,7 +38,7 @@ const Navigation = () => {
           </button>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("about")}
               className="text-white hover:text-blue-400 transition-colors"
@@ -63,6 +63,22 @@ const Navigation = () => {
             >
               Skills
             </button>
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-400 transition-colors"
+            >
+              <Github className="h-5 w-5" />
+            </a>
+            <a
+              href="https://linkedin.com/in/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-400 transition-colors"
+            >
+              <Linkedin className="h-5 w-5" />
+            </a>
           </div>
         </div>
 
@@ -94,6 +110,24 @@ const Navigation = () => {
               >
                 Skills
               </button>
+              <div className="flex space-x-4 px-3 py-2">
+                <a
+                  href="https://github.com/yourusername"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-blue-400 transition-colors"
+                >
+                  <Github className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://linkedin.com/in/yourusername"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-blue-400 transition-colors"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </a>
+              </div>
             </div>
           </div>
         )}
