@@ -3,20 +3,35 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 
 const Certificate = () => {
   const certificates = [
+    
     {
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2023",
+      title: "Data Engineering",
+      issuer: "Data Vidhya",
+      date: "9/2024- Inprogress",
+      description: "Advanced knowledge in data pipeline development and ETL processes on AWS/AZURE",
+      icon: <BookOpen className="h-6 w-6 text-blue-400" />
+    },
+    {
+      title: "Data Science",
+      issuer: "Coursera",
+      date: "2021",
       description: "Expertise in designing distributed systems and deploying applications on AWS",
       icon: <Award className="h-6 w-6 text-blue-400" />
     },
-    {
-      title: "Data Engineering Professional",
-      issuer: "Data Vidhya",
-      date: "2024",
-      description: "Advanced knowledge in data pipeline development and ETL processes",
-      icon: <BookOpen className="h-6 w-6 text-blue-400" />
-    }
+      {
+      title: "SQL",
+      issuer: "HackerRank",
+      date: "AUG/2021",
+      description: "It includes simple queries, relationships, and aggregators.",
+      icon: <Award className="h-6 w-6 text-blue-400" />
+    },
+     {
+      title: "Agiloft",
+      issuer: "Agiloft",
+      date: "AUG/2021",
+      description: "It includes Fundamentals, Design and Configration.",
+      icon: <Award className="h-6 w-6 text-blue-400" />
+    },
   ];
 
   return (
