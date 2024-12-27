@@ -20,22 +20,29 @@ const Certificate = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900" id="certificates">
+    <section className="py-32 bg-black" id="certificates">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Certificates</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-blue-400 to-violet-500 text-transparent bg-clip-text">
+          Certificates
+        </h2>
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {certificates.map((cert, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+            <Card 
+              key={index} 
+              className="bg-zinc-900/50 border-zinc-800 hover:border-blue-500/50 transition-colors duration-300 group"
+            >
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
-                  {cert.icon}
-                  <CardTitle>{cert.title}</CardTitle>
+                  <div className="text-blue-400 group-hover:text-violet-400 transition-colors">
+                    {cert.icon}
+                  </div>
+                  <CardTitle className="text-white">{cert.title}</CardTitle>
                 </div>
-                <CardDescription>{cert.issuer}</CardDescription>
-                <CardDescription>{cert.date}</CardDescription>
+                <CardDescription className="text-gray-400">{cert.issuer}</CardDescription>
+                <CardDescription className="text-gray-400">{cert.date}</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">{cert.description}</p>
+                <p className="text-gray-300">{cert.description}</p>
               </CardContent>
             </Card>
           ))}
