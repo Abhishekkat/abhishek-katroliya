@@ -49,7 +49,7 @@ const Hero = () => {
           <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden relative mx-auto">
             <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-pink-600" />
             <img
-              src="/placeholder.svg"
+              src="https://photos.app.goo.gl/HbbQvEfHuJifG88GA"
               alt="Profile"
               className="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
             />
