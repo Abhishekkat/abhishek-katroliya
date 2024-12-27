@@ -19,14 +19,7 @@ const Education = () => {
       description: "Focused on computer science fundamentals, data structures, and algorithms",
       icon: <GraduationCap className="h-6 w-6" />
     },
-    {
-      degree: "Data Engineering Certification",
-      field: "AWS & Big Data",
-      institution: "Data Vidhya",
-      period: "In Progress",
-      description: "Specialized training in AWS services, ETL processes, and data pipeline development",
-      icon: <BookOpen className="h-6 w-6" />
-    }
+    
   ];
 
   return (
