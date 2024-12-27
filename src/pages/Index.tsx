@@ -10,7 +10,7 @@ import Navigation from "@/components/Navigation";
 
 const Index = () => {
   return (
-    <main className="bg-navy">
+    <main className="bg-black text-white">
       <Navigation />
       <Hero />
       <About />
