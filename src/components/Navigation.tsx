@@ -69,7 +69,7 @@ const Navigation = () => {
             </button>
             <div className="flex items-center space-x-4 ml-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/Abhishekkat"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
@@ -77,7 +77,7 @@ const Navigation = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/abhishek-katroliya/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
