@@ -61,10 +61,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-20 bg-navy text-white" id="contact">
+    <section className="py-32 bg-black text-white" id="contact">
       <div className="container mx-auto px-4 max-w-2xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Get in Touch</h2>
-        <form onSubmit={handleSubmit} className="space-y-6 animate-fadeIn">
+        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-blue-400 to-violet-500 text-transparent bg-clip-text">Get in Touch</h2>
+        <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <Input
               type="text"
@@ -73,7 +73,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="bg-navy-light border-gray-700 text-white"
+              className="bg-zinc-900/50 border-zinc-800 text-white focus:border-blue-500/50"
             />
           </div>
           <div>
@@ -84,7 +84,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="bg-navy-light border-gray-700 text-white"
+              className="bg-zinc-900/50 border-zinc-800 text-white focus:border-blue-500/50"
             />
           </div>
           <div>
@@ -94,12 +94,12 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               required
-              className="bg-navy-light border-gray-700 text-white min-h-[150px]"
+              className="bg-zinc-900/50 border-zinc-800 text-white focus:border-blue-500/50 min-h-[150px]"
             />
           </div>
           <Button 
             type="submit" 
-            className="w-full bg-blue-500 hover:bg-blue-600"
+            className="w-full bg-gradient-to-r from-blue-400 to-violet-500 hover:opacity-90 transition-opacity"
             disabled={isLoading}
           >
             <Mail className="mr-2 h-4 w-4" />
