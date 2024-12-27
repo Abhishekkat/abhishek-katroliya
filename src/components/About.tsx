@@ -8,10 +8,11 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div className="space-y-8 animate-fadeIn">
             <p className="text-lg text-gray-300 leading-relaxed">
-              With three years of experience as a Contract Lifecycle Management (CLM) consultant, I have honed my skills in implementing solutions, streamlining processes, and managing complex projects.
-              My passion for problem-solving and working with data has inspired me to transition into the field of data engineering.
-              I am eager to leverage my analytical mindset and technical expertise to design and build robust data pipelines, optimize workflows, and unlock insights from data.
-              As I embark on this new career path, I bring a unique perspective from my CLM background, combining business acumen with a strong drive to deliver impactful data solutions.
+              Experienced Consultant with a proven track record of successfully delivering end-to-end solutions
+ within the CLM platform. Skilled in implementing new enhancements, developing custom solution, and
+ integrating with third-party solutions. Proficient in translating user stories into actionable software
+ and comfortable in rapidly changing work environments. Possess strong interpersonal skills with the
+ ability to mentor and motivate team members.
             </p>
             <div className="flex items-center gap-4 text-gray-300 hover:text-blue-400 transition-colors">
               <Award className="h-6 w-6" />
