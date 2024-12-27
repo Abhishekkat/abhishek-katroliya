@@ -4,25 +4,7 @@ import { Globe } from "lucide-react";
 const projects = [
   {
     title: "AWS ETL Pipeline",
-    description: " Led the design and implementation of the New Counterparty Process, streamlining the onboarding of 
-new counterparties and ensuring compliance with regulatory requirements.
- 
- Collaborated with cross-functional teams, including legal, compliance, and operations, to develop 
-standardized procedures and workflows for onboarding new counterparties.
- 
- Implemented automated tools and systems to expedite the onboarding process and reduce manual 
-effort, resulting in significant time and cost savings.
- 
- Developed and delivered training sessions for internal stakeholders to ensure understanding and 
-adherence to the New Counterparty Process.
- 
- Established key performance indicators (KPIs) to monitor the efficiency and effectiveness of the 
-onboarding process and implemented continuous improvement initiatives to optimize performance.
- 
- Maintained up-to-date knowledge of regulatory changes and industry best practices related to 
-counterparty onboarding and risk management.
- 
- Worked on Logic to On boarded the vendor from SAP Ariba.",
+    description: " ",
     image: "/lovable-uploads/3b8b814b-1459-4289-9ea6-431e212be3e9.png",
     link: "https://github.com/Abhishekkat/Spotify_ETL_Pipline"
   },
