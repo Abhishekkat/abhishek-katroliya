@@ -41,7 +41,7 @@ const Hero = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <Button 
-              className="border-white text-white hover:bg-white/10 font-medium
+              className="border-white text-white hover:bg-white/10 font-medium"
               onClick={scrollToAbout}
             >
               <User className="mr-2 h-4 w-4" /> About Me
