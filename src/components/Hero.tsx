@@ -47,11 +47,11 @@ const Hero = () => {
         
         <div className="relative">
           <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden relative mx-auto">
-            <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-pink-600" />
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-pink-600 opacity-40" />
             <img
-              src="https://photos.app.goo.gl/HbbQvEfHuJifG88GA"
-              alt="Profile"
-              className="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
+              src="/lovable-uploads/1e50e0e4-ce62-414f-8e89-a7036f3fc603.png"
+              alt="Abhishek Katroliya"
+              className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
         </div>
