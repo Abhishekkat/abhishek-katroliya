@@ -14,7 +14,7 @@ const Hero = () => {
 
   const handleDownloadCV = () => {
     // Replace this URL with the actual path to your CV file
-    const cvUrl = "https://drive.google.com/file/d/1xKTgHbUb0ExaEh07jmC1h2o9n63lkKYO/view?usp=drive_link";
+    const cvUrl = "https://drive.google.com/file/d/1xKTgHbUb0ExaEh07jmC1h2o9n63lkKYO/view?usp=sharing";
     const link = document.createElement('a');
     link.href = cvUrl;
     link.download = "Abhishek_Katroliya_CV.pdf";
