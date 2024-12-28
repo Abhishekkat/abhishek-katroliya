@@ -20,6 +20,9 @@ const Index = () => {
       <Projects />
       <Skills />
       <Contact />
+      <footer className="py-6 text-center text-gray-400 border-t border-gray-800">
+        <p>Created by Abhishek Katroliya</p>
+      </footer>
     </main>
   );
 };
