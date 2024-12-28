@@ -1,4 +1,4 @@
-import { User, Mail } from "lucide-react";
+import { User, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -10,6 +10,17 @@ const Hero = () => {
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
     contactSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleDownloadCV = () => {
+    // Replace this URL with the actual path to your CV file
+    const cvUrl = "/CV.pdf";
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = "Abhishek_Katroliya_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -28,7 +39,7 @@ const Hero = () => {
               Available for opportunities
             </span>
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <Button 
               className="bg-white text-black hover:bg-gray-200"
               onClick={scrollToAbout}
@@ -41,6 +52,13 @@ const Hero = () => {
               onClick={scrollToContact}
             >
               <Mail className="mr-2 h-4 w-4" /> Contact
+            </Button>
+            <Button
+              variant="outline"
+              className="border-white text-white hover:bg-white/10"
+              onClick={handleDownloadCV}
+            >
+              <Download className="mr-2 h-4 w-4" /> Download CV
             </Button>
           </div>
         </div>
