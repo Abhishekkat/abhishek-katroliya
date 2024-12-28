@@ -48,14 +48,14 @@ const Hero = () => {
             </Button>
             <Button 
               variant="outline"
-              className="border-white text-white hover:bg-white/10"
+              className="border-white text-white hover:bg-white/10 font-medium"
               onClick={scrollToContact}
             >
               <Mail className="mr-2 h-4 w-4" /> Contact
             </Button>
             <Button
               variant="outline"
-              className="border-white text-white hover:bg-white/10"
+              className="border-white text-white hover:bg-white/10 font-medium"
               onClick={handleDownloadCV}
             >
               <Download className="mr-2 h-4 w-4" /> Download CV
