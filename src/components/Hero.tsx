@@ -51,7 +51,7 @@ const Hero = () => {
             <img
               src="/lovable-uploads/1e50e0e4-ce62-414f-8e89-a7036f3fc603.png"
               alt="Abhishek Katroliya"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover object-top"
             />
           </div>
         </div>
