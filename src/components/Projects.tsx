@@ -9,14 +9,16 @@ const projects = [
     link: "https://github.com/Abhishekkat/Spotify_ETL_Pipline"
   },
   {
-    title: "New Counterparty Process",
-    description: "Mobile-first e-commerce platform with modern UI/UX",
+    title: "Multiple Counterparty Process",
+    description: "Successfully implemented the New Counterparty Process, reducing onboarding time by 50% and 
+enhancing compliance with regulatory requirements",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     link: "#",
   },
   {
-    title: "Project 3",
-    description: "Real-time dashboard with data visualization",
+    title: "Contract Intake",
+    description: "Successfully implemented the contract request management system, improving transparency, 
+efficiency, and control over the contract initiation process",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
     link: "#",
   },
