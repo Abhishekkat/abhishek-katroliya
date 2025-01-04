@@ -3,22 +3,36 @@ import { Globe } from "lucide-react";
 
 const projects = [
   {
-    title: "AWS ETL Pipeline",
-    description: " ",
-    image: "/lovable-uploads/3b8b814b-1459-4289-9ea6-431e212be3e9.png",
-    link: "https://github.com/Abhishekkat/Spotify_ETL_Pipline"
-  },
-  {
-    title: "New Counterparty Process",
-    description: "Mobile-first e-commerce platform with modern UI/UX",
+    title: "Multiple Counterparty Process",
+    description: "",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     link: "#",
   },
   {
-    title: "Project 3",
-    description: "Real-time dashboard with data visualization",
+    title: "Contract Intake",
+    description: " ",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
     link: "#",
+  },
+   {
+    title: "Approvals Process",
+    description: " ",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    link: "#"
+  },
+   ,
+   {
+    title: "Self Serve CDA Process",
+    description: "",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    link: "#",
+  },
+  {
+    title: "AWS ETL Pipeline",
+    description: "Self Project",
+    Skills: "S3/Glue/CloudWatch/Athena/Python/SQL/",
+    image: "/lovable-uploads/3b8b814b-1459-4289-9ea6-431e212be3e9.png",
+    link: "https://github.com/Abhishekkat/Spotify_ETL_Pipline"
   },
 ];
 
