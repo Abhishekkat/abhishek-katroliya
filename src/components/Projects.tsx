@@ -17,12 +17,20 @@ const projects = [
    {
     title: "Approvals Process",
     description: " ",
-    image: "/lovable-uploads/3b8b814b-1459-4289-9ea6-431e212be3e9.png",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
     link: "#"
   },
+   ,
    {
+    title: "Self Serve CDA Process",
+    description: "",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    link: "#",
+  },
+  {
     title: "AWS ETL Pipeline",
-    description: " ",
+    description: "Self Project",
+    Skills: "S3/Glue/CloudWatch/Athena/Python/SQL/",
     image: "/lovable-uploads/3b8b814b-1459-4289-9ea6-431e212be3e9.png",
     link: "https://github.com/Abhishekkat/Spotify_ETL_Pipline"
   },
