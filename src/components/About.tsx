@@ -12,7 +12,7 @@ const About = () => {
  within the CLM platform. Skilled in implementing new enhancements, developing custom solution, and
  integrating with third-party solutions. Proficient in translating user stories into actionable software
  and comfortable in rapidly changing work environments. Possess strong interpersonal skills with the
- ability to mentor and motivate team members.
+ ability to mentor and motivate team members..
             </p>
             <div className="flex items-center gap-4 text-gray-300 hover:text-blue-400 transition-colors">
               <Award className="h-6 w-6" />
