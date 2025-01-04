@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 const Experience = () => {
   const experiences = [
     {
-      title: "CLM Consultant",
+      title: "Consultant",
       company: "Sequent Inc.",
       period: "2024/7 - Present",
       location: "Gurugram,india",
