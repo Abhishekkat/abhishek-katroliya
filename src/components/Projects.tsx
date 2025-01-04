@@ -11,7 +11,7 @@ const projects = [
   {
     title: "Multiple Counterparty Process",
     description: "Successfully implemented the New Counterparty Process, reducing onboarding time by 50% and 
-enhancing compliance with regulatory requirements",
+enhancing compliance regulatory requirements",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     link: "#",
   },
