@@ -1,7 +1,47 @@
 import { User, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [text, setText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+
+  const textArray = ["Based in India", "Consultant", "Open to Work"];
+  const period = 2000;
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, typingSpeed);
+
+    return () => clearInterval(ticker);
+  }, [text, isDeleting]);
+
+  const tick = () => {
+    let i = loopNum % textArray.length;
+    let fullText = textArray[i];
+    let updatedText = isDeleting 
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setTypingSpeed(prevSpeed => prevSpeed / 2);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setTypingSpeed(period);
+    } else if (isDeleting && updatedText === '') {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setTypingSpeed(150);
+    }
+  };
+
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about');
     aboutSection?.scrollIntoView({ behavior: 'smooth' });
@@ -13,7 +53,6 @@ const Hero = () => {
   };
 
   const handleDownloadCV = () => {
-    // Replace this URL with the actual path to your CV file
     const cvUrl = "https://drive.google.com/file/d/1xKTgHbUb0ExaEh07jmC1h2o9n63lkKYO/view?usp=sharing";
     const link = document.createElement('a');
     link.href = cvUrl;
@@ -33,7 +72,7 @@ const Hero = () => {
             Abhishek Katroliya
           </h1>
           <p className="text-xl md:text-2xl text-gray-400">
-            Based in India
+            <span className="block min-h-[2em]">{text}</span>
             <span className="flex items-center gap-2 mt-2">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
               Available for opportunities
