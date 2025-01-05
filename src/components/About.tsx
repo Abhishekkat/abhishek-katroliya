@@ -26,8 +26,8 @@ const About = () => {
           <div className="relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-violet-500 rounded-lg blur opacity-25"></div>
             <img
-              src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
-              alt="Workspace"
+              src="/lovable-uploads/32ebcbe5-c200-4171-9805-9afde9eb2c2a.png"
+              alt="Contract Lifecycle Management Diagram"
               className="relative rounded-lg shadow-2xl"
             />
           </div>
