@@ -8,7 +8,7 @@ const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const textArray = ["Based in India", "Full Stack Developer", "Open to Work"];
+  const textArray = ["Based in India", "Consultant", "Open to Work"];
   const period = 2000;
 
   useEffect(() => {
